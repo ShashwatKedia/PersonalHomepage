@@ -1,0 +1,123 @@
+
+/* Navbar */
+
+.nav_items{
+    margin: 10px 0;
+    padding: 15px;
+}
+
+/* Home Section */
+
+.home_sec{
+    position: relative;
+}
+
+.home_img_div{
+    display: flex;
+    justify-content: end;
+}
+
+.home_img{
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* About Me Section*/
+
+.about_para_box{
+    flex-direction: column;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.dynamic-txts li{
+    font-size: 37px;
+}
+
+.wrapper .static-txt{
+    font-size: 30px;
+    width: 400px;
+}
+
+.about_p1{
+    margin-left: 0;
+    margin-top: 25px;
+}
+
+/* Projects Section */
+.projects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_box{
+    padding: 50px 0;
+}
+
+.projects_heading{
+    margin: 15px 0;
+}
+
+.odd, .even{
+    margin: 0;
+}
+
+#project2, #project4{
+    flex-direction: column;
+}
+
+/* Contact Section */
+.footer_dots{
+    width: 200px;
+    height: 200px;
+}
+
+.contact_box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.get_in_touch{
+    margin: 10px 0 50px 0;
+    width: fit-content;
+}
+
+.contact_left{
+    margin: 0;
+}
+
+.contact_right{
+    margin-top: 50px;
+}
+
+.contact_div{
+    width: 350px;
+}
+
+.contact_typewriter{
+    margin: 0;
+    width: 350px;
+    height: 175px;
+}
+
+@media only screen and (max-width: 715px) {
+    .right_dot{
+        display: none;
+    }
+    .copyright{
+        margin-bottom: 145px;
+    }
+    .nav_items>a{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .nav_items{
+        padding: 10px;
+    }
+
+}

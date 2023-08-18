@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Global Classes */
+.h1{
+    line-height: 90px;
+    font-size: 70px;
+}
+
+
+.h2{
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.h3{
+    font-size: 16px;
+    color: gray;
+}
+
+/* Navbar Section */
+
+nav{
+    width: 100vw;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.7);
+    /* background-image: linear-gradient(180deg, #000, rgba(0, 0, 0, 0.8) 59%, transparent); */
+}
+
+
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+
+.nav_items{
+    margin: 10px 20px;
+    padding: 15px 20px;
+}
+
+.nav_items>a{
+    text-decoration: none;
+    color: white ;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.nav_links:hover{
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+
+
+/* Home Section */
+.home_sec{
+    display: flex;
+    justify-content: center;
+    margin: 200px 0;
+}
+
+.home_headings_box{
+    margin-top: 175px;
+}
+
+.header_dot{
+    color: orange;
+    font-size: 100px;
+}
+
+.header_comma{
+    color: orange;
+    font-size: 40px;
+}
+
+.home_head3{
+    display: inline-block;
+    width: 400px;
+    text-align: justify;
+}
+
+.home_img{
+    width: 350px;
+    height: 500px;
+    margin-left: 100px ;
+}
+
+.divider{
+    background-color: #ffa500;
+    margin: 50px 5vw;
+    border-radius: 2px;
+}
+
+@keyframes divide {
+    0%{
+      width: 10vw;
+    }
+    100%{
+        width: 90vw;
+    }
+  }
+
+/* About Section */
+
+.about_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.about_para_box{
+    display: flex;
+    justify-content: center;
+}
+
+.about_p1{
+    width: 400px;
+    margin: 50px 0px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+/* Typing Animation */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.static-txt{
+    text-align: center;
+}
+
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin: 0px 50px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: orange;
+  font-size: 45px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 9s steps(3) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -270px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 60px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background: black;
+  border-left: 2px solid orange;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+/* Projects Section */
+
+.projects_sec{
+    margin-top: 75px;
+}
+
+.projects_h1{
+    text-align: center;
+}
+
+.projects_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0 50px 0;
+}
+
+.projects{
+    display: flex;
+    margin: 50px 0;
+}
+
+.projects_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_div{
+    background-color: orange;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects_img{
+    width: 300px;
+    height: 300px;
+}
+
+.projects_heading{
+    font-size: 40px;
+}
+
+.projects_text{
+    width: 400px;
+    text-align: justify;
+    color: gray;
+    font-size: 16px;
+}
+
+#project2, #project4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.odd{
+    margin-right: 100px;
+}
+
+.even{
+    margin-left: 100px;
+}
+
+
+
+/* Contact Section */
+
+.contact_sec{
+    margin-top: 75px;
+}
+
+.contact_heading
+{
+    text-align: center;
+}
+
+.contact_box{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.contact_typewriter{
+    width: 400px;
+    height: 200px;
+    margin-right: 50px;
+}
+
+.contact_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.get_in_touch{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 150px;
+}
+
+.contact_exclaim{
+    color: orange;
+    font-size: 50px;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center ;
+}
+
+.contact_fly{
+    width: 40px;
+    height: 40px;
+    margin: 30px 10px ;
+    cursor: pointer;
+    filter: invert(100);
+}
+
+.contact_fly:hover{
+    filter: invert(73%) sepia(65%) saturate(3103%) hue-rotate(358deg) brightness(100%) contrast(105%);    
+}
+
+#instagram{
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+}
+
+#facebook{
+    width: 45px;
+    height: 45px;
+}
+
+#linkedin{
+    width: 43px;
+    height: 43px;
+}
+
+.contact_right{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 300px;
+}
+
+.contact_div{
+    margin-bottom: 30px;
+    /* position: relative; */
+}
+
+input, textarea{
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-top:transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: 0;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder, textarea::placeholder{
+    color: white;
+    font-size: 16px;
+}
+
+.submit_div{
+      display: flex;
+      width: 300px;
+      justify-content: center;
+      align-items: center;
+}
+
+#submit_btn{
+    border: 1px solid orange;
+    width: 150px;
+}
+
+.footer_dots{
+    filter: invert(73%) sepia(65%) saturate(3103%) hue-rotate(358deg) brightness(100%) contrast(105%);  
+    width: 300px;
+    margin: 50px 0;
+}
+
+.left_dot{
+    margin-right:50px;
+}
+
+.right_dot{
+    margin-left:50px;
+}
+
+.footer_space{
+    /* text-align: center; */
+    color: orange;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.copyright{
+    display: flex;
+    align-items: end;
+    margin-bottom: 45px;
+    font-size: 12px;
+}

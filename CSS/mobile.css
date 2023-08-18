@@ -1,0 +1,222 @@
+/* Navbar Section */
+
+.nav_items>a{
+    font-size: 13px;
+    letter-spacing: normal;
+    padding: 1.5vw;
+}
+
+.nav_items{
+    padding: 10px 5px;
+}
+
+.header_dot{
+    font-size: 70px;
+}
+
+.header_comma{
+    font-size: 30px;
+}
+
+/* Home Section */
+
+.home_sec{
+    margin: 200px 0 100px 0;
+}
+
+.home_img{
+    width: 250px;
+    height: 375px;
+    top: -80px;
+    left: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+    .home_img{
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .home_img{
+        top: -75px;
+        width: 215px;
+        height: 365px;
+    }
+}
+
+.home_headings_box{
+    margin: 75px 0;
+}
+
+.home_head1{
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.home_head2{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.home_head3{
+    font-size: 14px;
+    width: 300px;
+}
+
+/* About Section */
+.about_sec{
+    margin-top: 30px;
+}
+
+.about_para_box{
+    margin-top: 30px;
+}
+
+.about_h1{
+    font-size: 40px;
+}
+
+.about_p1{
+    width: 300px;
+}
+
+.about_para_box{
+    width: 300px;
+    margin-top: 10px;
+}
+
+.about_p1{
+    font-size: 14px;
+}
+
+/* Typing animation */
+
+.wrapper .dynamic-txts{
+    height: 30px;
+    line-height: 30px;
+}
+
+.dynamic-txts li{
+    font-size: 23px;
+   animation: slide2 9s steps(3) infinite;
+}
+
+.dynamic-txts li span{
+    line-height: 29px;
+}
+
+dynamic-txts li span::after{
+    height: 30px;
+}
+
+.wrapper .static-txt{
+    font-size: 20px;
+    width: 300px;
+}
+
+@keyframes slide2 {
+    100%{
+      top: -90px;
+    }
+  }
+
+
+/* Projects Section */
+
+.projects_box{
+    padding: 10px;
+}
+
+.projects_div{
+    width: 280px;
+    height: 280px;
+}
+
+.projects_sec{
+    margin-top: 65px;
+}
+
+.projects_h1{
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.projects_heading{
+    font-size: 25px;
+}
+
+.projects_img{
+    background-color: orange;
+    width: 230px;
+    height: 230px;
+}
+
+.projects_text{
+    width: 250px;
+    font-size: 14px;
+}
+
+/* Contact Section */
+.contact_sec{
+    margin-top: 65px;
+}
+
+.contact_heading{
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.contact_typewriter{
+    width: 200px;
+    height: 100px;
+}
+
+.get_in_touch{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.contact_right{
+    width: 200px;
+}
+
+.contact_div{
+    width: 200px;
+}
+
+.contact_exclaim{
+    font-size: 30px;
+}
+
+.submit_div{
+    width: 100px;
+}
+
+.footer_space{
+    margin-top: 50px;
+}
+
+.footer_dots{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.copyright{
+    margin-bottom: 60px;
+}
+
+#instagram{
+    width: 32px;
+    height: 32px;
+}
+
+#linkedin{
+    width: 30px;
+    height: 30px;
+}
+
+#facebook{
+    width: 32px;
+    height: 32px;
+}
