@@ -20,7 +20,6 @@ function isElementVisible(element){
         {
             element.style.animation = 'divide 3s 1 ease-in-out';
             element.style.height = '2px';
-            nav.style.boxShadow = '0px 10px 100px orange';
         }
 }
 
