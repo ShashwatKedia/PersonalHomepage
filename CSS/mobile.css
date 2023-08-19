@@ -1,5 +1,4 @@
 /* Navbar Section */
-
 .nav_items>a{
     font-size: 13px;
     letter-spacing: normal;
@@ -91,25 +90,25 @@
 
 /* Typing animation */
 
-.wrapper .dynamic-txts{
+.wrapper .dynamic_txts{
     height: 30px;
     line-height: 30px;
 }
 
-.dynamic-txts li{
+.dynamic_txts li{
     font-size: 23px;
    animation: slide2 9s steps(3) infinite;
 }
 
-.dynamic-txts li span{
+.dynamic_txts li span{
     line-height: 29px;
 }
 
-dynamic-txts li span::after{
+dynamic_txts li span::after{
     height: 30px;
 }
 
-.wrapper .static-txt{
+.wrapper .static_txt{
     font-size: 20px;
     width: 300px;
 }
