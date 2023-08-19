@@ -148,26 +148,25 @@ nav{
 .wrapper{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
 }
 
-.static-txt{
+.static_txt{
     text-align: center;
 }
 
-.wrapper .static-txt{
+.wrapper .static_txt{
   color: #fff;
   font-size: 35px;
   font-weight: 400;
 }
-.wrapper .dynamic-txts{
+.wrapper .dynamic_txts{
   margin: 0px 50px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
 }
-.dynamic-txts li{
+.dynamic_txts li{
   list-style: none;
   color: orange;
   font-size: 45px;
@@ -181,12 +180,12 @@ nav{
     top: -270px;
   }
 }
-.dynamic-txts li span{
+.dynamic_txts li span{
   position: relative;
   margin: 5px 0;
   line-height: 60px;
 }
-.dynamic-txts li span::after{
+.dynamic_txts li span::after{
   content: "";
   position: absolute;
   left: 0;
@@ -323,7 +322,7 @@ nav{
     justify-content: center ;
 }
 
-.contact_fly{
+.contact_social{
     width: 40px;
     height: 40px;
     margin: 30px 10px ;
@@ -331,7 +330,7 @@ nav{
     filter: invert(100);
 }
 
-.contact_fly:hover{
+.contact_social:hover{
     filter: invert(73%) sepia(65%) saturate(3103%) hue-rotate(358deg) brightness(100%) contrast(105%);    
 }
 
