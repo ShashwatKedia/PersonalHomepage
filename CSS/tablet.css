@@ -33,11 +33,11 @@
     width: 400px;
 }
 
-.dynamic-txts li{
+.dynamic_txts li{
     font-size: 37px;
 }
 
-.wrapper .static-txt{
+.wrapper .static_txt{
     font-size: 30px;
     width: 400px;
 }
